@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - NetCore Solutions S.L.</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+<!-- Barra para poder moverse por la pagina web -->
+<nav>
+  <div class="nav-logo">
+    <a href="../index.html"><img src="../img/logo.png" alt="NetCore Solutions"></a>
+  </div>
+  <div class="nav-spacer"></div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="Nuestros Servicios.html">Servicios</a></li>
+    <li><a href="Quienes Somos.html">Quiénes somos</a></li>
+    <li><a href="Contacto.html" class="nav-cta">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- CONTACTO -->
+<!-- Contacto Sección sobre como nos pueden contactar a nosotros mediante un formulario -->
+<section id="contacto">
+  <div class="section-header">
+    <span class="section-tag">Hablemos</span>
+    <h2>Contacto</h2>
+    <p>¿Necesitas una infraestructura de red para tu empresa? Cuéntanos tu proyecto y te ayudamos.</p>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Escriba su nombre">
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" placeholder="Escriba su empresa">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Escriba su correo@empresa.com">
+      </div>
+      <div class="form-group">
+        <label for="servicio">Servicio de interes</label>
+        <select id="servicio">
+          <option value="">Selecciona un servicio</option>
+          <option>Diseño de Redes LAN</option>
+          <option>Configuración de Servidores</option>
+          <option>Seguridad Informática</option>
+          <option>Desarrollo Web Corporativo</option>
+          <option>Documentación Técnica</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="Describa su proyecto y más detalles"></textarea>
+      </div>
+      <button class="btn-primary form-submit" onclick="sendForm()">Enviar mensaje</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Esto es el FOOTER la parte baja donde vamos a dar mas información al cliente,
+ por ejemplo los nombre de los creadores de la empresa, los mas importantes, nuestra redes y un poco mas de detalles -->
+<footer>
+  <div class="footer-logo">
+    <img src="/img/logo.png" width="100%" alt="NetcoreSolutions-LOGO">
+  </div>
+
+  <div class="footer-copy">
+    &copy;2026 NetCore Solutions S.L. - Samuel Sánchez & José Enmanuel Niño - Empresa De Red
+  </div>
+  <link rel="stylesheet" href="/css/redes.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+  <div class="social">
+    <a class="icon" href="https://www.instagram.com/netcore_solutions/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg height="80" width="80" viewBox="0 0 80 80" aria-hidden="true">
+        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+      </svg>
+      <i class="bx bxl-instagram"></i>
+    </a>
+
+    <a class="icon" href="https://www.linkedin.com/in/netcore-solutions-s-l-2451b43a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <svg height="80" width="80" viewBox="0 0 80 80" aria-hidden="true">
+        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+      </svg>
+      <i class="bx bxl-linkedin-square"></i>
+    </a>
+
+    <a class="icon" href="https://x.com/virthmouth49968" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+      <svg height="80" width="80" viewBox="0 0 80 80" aria-hidden="true">
+        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
+      </svg>
+      <i class="bx bxl-twitter"></i>
+    </a>
+  </div>
+</footer>
+<script src="../js/contacto.js"></script>
+</body>
+</html>
