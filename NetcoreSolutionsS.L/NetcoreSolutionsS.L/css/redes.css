@@ -1,0 +1,35 @@
+.social{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.icon{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.icon svg{
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* el SVG no roba el click */
+}
+
+.icon i{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  pointer-events: none; /* el icono tampoco roba el click */
+}
+
+/* opcional: efecto hover */
+.icon:hover{
+  transform: scale(1.05);
+  transition: transform .2s;
+}
